@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style_index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Home</title>
+</head>
+<body>
+    <%- include('partials/header.ejs') %>
+    <main>
+        <section class="cover">
+            <div class="hero_image">
+                <div class="hero_text">
+                    <h1>Descubra o Mundo dos Dinossauros</h1>
+                    <p>Uma Jornada Fascinante pela Pré-História</p>
+                    <a href="/postagens"><button class="hero_btn">Começar</button></a>
+                </div>
+            </div>
+        </section>
+
+        <div class="main-content">
+            <section class="featured-post">
+                <h2>Explorando o Mundo dos Dinossauros</h2>
+                <article>
+                    <h3>O Fascinante Mundo dos Velociraptors</h3>
+                    <p>Descubra mais sobre esses predadores ágeis e inteligentes.</p>
+                    <a href="/postagens/velociraptors">Leia mais</a>
+                </article>
+            </section>
+    
+            <section class="recent-posts">
+                <h2>Postagens Recentes</h2>
+                <article>
+                    <h3>Os Gigantes do Jurássico</h3>
+                    <p>Conheça os maiores dinossauros que já habitaram a Terra.</p>
+                    <a href="/postagens/gigantes-jurassico">Leia mais</a>
+                </article>
+                <article>
+                    <h3>Curiosidades sobre o Tricerátops</h3>
+                    <p>Descubra fatos interessantes sobre esse dinossauro com chifres.</p>
+                    <a href="/postagens/triceratops">Leia mais</a>
+                </article>
+            </section>
+        </div>
+    </main>
+    <%- include('partials/footer.ejs') %>
+</body>
+</html>
